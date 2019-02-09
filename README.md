@@ -4,8 +4,8 @@
 非Windows用户：  
 运行`go get -v github.com/coderbaka/bagoum-card-spider`  
 Windows用户：  
-请下载exe版本 https://github.com/coderbaka/bagoum-card-spider/releases/download/v0.0.1/bagoum-card-spider.exe
-依赖的第三方库: github.com/jessevdk/go-flags  
+请下载exe版本 https://github.com/coderbaka/bagoum-card-spider/releases/download/v0.0.1/bagoum-card-spider.exe  
+依赖的第三方库: github.com/jessevdk/go-flags  github.com/gocolly/colly
 
 ### 帮助
 代开终端/CMD，输入`bagoum-card-spider -h`
