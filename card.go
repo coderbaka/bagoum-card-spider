@@ -179,7 +179,7 @@ func NewCard(url string) *Card {
 	}
 
 	//FIXME here need multi language support
-	ret.EvoArtWithBorderURL = "https://shadowverse-portal.com/image/card/ja/E_" + string(res1[1]) + ".png"
+	ret.EvoArtWithBorderURL = "https://shadowverse-portal.com/image/card/en/E_" + string(res1[1]) + ".png"
 	ret.EvoArtURL = "http://sv.bagoum.com/getRawImage/1/0/" + string(res2[1])
 
 	return ret
@@ -205,10 +205,10 @@ func (card *Card) Store(config StoreConfig) error {
 		setErr(card.download(card.BaseArtWithBorderURL, card.Name+"/"+"base-with-border.png"))
 	}
 	if config.Content[BaseArtStoreFlag] {
-		setErr(card.download(card.BaseArtURL, card.Name+"/"+"base-art.png"))
+		setErr(card.download(card.BaseArtURL, card.Name+"/"+"base-art.jpeg"))
 	}
 	if config.Content[EvoArtStoreFlag] {
-		setErr(card.download(card.EvoArtURL, card.Name+"/"+"evo-art.png"))
+		setErr(card.download(card.EvoArtURL, card.Name+"/"+"evo-art.jpeg"))
 	}
 	if config.Content[EvoArtWithBorderStoreFlag] {
 		setErr(card.download(card.EvoArtWithBorderURL, card.Name+"/"+"evo-art-with-border.png"))
@@ -239,6 +239,7 @@ func (card *Card) downloadSoundTrack(urls map[string]string, prefix string) erro
 }
 
 func (card *Card) download(url, fileName string) error {
+	fmt.Println(url)
 	req, err := http.NewRequest("GET", url, nil)
 	if err != nil {
 		return err

@@ -13,6 +13,8 @@ Windows用户：
 由于用Go写爬虫极其难受，加上要开学了，所以大概是不会更新了。
 1. 增加卡牌信息下载，增加多语言支持
 2. <del>用Python重写一遍</del>
+### 目前的bug
+1. 有些不是随从卡没有进化后的版本，但还是会下载。这些卡下的evo-*文件通常都是打不开的（为纯文本格式）。但不影响使用。
 ### 截图
 ![screenshot-1.png](https://i.loli.net/2019/02/09/5c5eb2698e5de.png)
 ![screensho-3.png](https://i.loli.net/2019/02/09/5c5eb2699053e.png)
