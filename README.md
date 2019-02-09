@@ -13,4 +13,8 @@ Windows用户：
 由于用Go写爬虫极其难受，加上要开学了，所以大概是不会更新了。
 1. 增加卡牌信息下载，增加多语言支持
 2. <del>用Python重写一遍</del>
+### 截图
+![screenshot-1.png](https://i.loli.net/2019/02/09/5c5eb2698e5de.png)
+![screensho-3.png](https://i.loli.net/2019/02/09/5c5eb2699053e.png)
+![screenshot-2.png](https://i.loli.net/2019/02/09/5c5eb26997348.png)
 
